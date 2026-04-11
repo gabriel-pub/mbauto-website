@@ -5,7 +5,9 @@ export function App() {
   return (
     <BrowserRouter>
       <div className="sticky top-0 z-50 flex justify-between bg-background/80 backdrop-blur">
-        <h1 className="p-4 text-2xl">MB AUTO</h1>
+        <Link to={"/"}>
+          <h1 className="p-4 text-2xl font-bold">MB AUTO</h1>
+        </Link>
         <div className="p-4">
           <HamburgerMenu />
         </div>

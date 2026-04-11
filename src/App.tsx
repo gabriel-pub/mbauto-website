@@ -1,5 +1,28 @@
-import { BrowserRouter } from "react-router-dom"
-import HamburgerMenu from "@/components/layout/hamburger"
+import { BrowserRouter, Link } from "react-router-dom"
+import { HamburgerMenu } from "@/components/layout/hamburger"
+import { services } from "./data/services"
+import { ServiceCard } from "./components/layout/card"
+
+function Services() {
+  return (
+    <div>
+      <h2 className="mb-12 text-center text-3xl font-bold">Our Services</h2>
+      <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
+        {services.map((service) => (
+          <Link
+            to={`/services/${service.id}`}
+            key={service.id}
+            className="block overflow-hidden rounded-lg bg-white shadow-md transition-shadow duration-300 hover:shadow-xl"
+          >
+            <div id={service.id}>
+              <ServiceCard serviceDetails={service} />
+            </div>
+          </Link>
+        ))}
+      </div>
+    </div>
+  )
+}
 
 export function App() {
   return (
@@ -12,6 +35,7 @@ export function App() {
           <HamburgerMenu />
         </div>
       </div>
+      <Services />
     </BrowserRouter>
   )
 }

@@ -9,6 +9,7 @@ import {
   CollapsibleTrigger,
 } from "@/components/ui/collapsible"
 import { cn } from "@/lib/utils"
+import { services } from "@/data/services"
 
 type MenuItem = {
   title: string
@@ -21,14 +22,10 @@ const menuItems: MenuItem[] = [
   { title: "About", href: "/about" },
   {
     title: "Services",
-    submenu: [
-      { title: "Oil Change", href: "/services/oil-change" },
-      { title: "Brake Service", href: "/services/brake-service" },
-      { title: "Vehicle OBD", href: "/services/vehicle-obd" },
-      { title: "Air Conditioning", href: "/services/air-conditioning" },
-      { title: "Vehicle Up Keeping", href: "/services/vehicle-up-keeping" },
-      { title: "Spray painting", href: "/services/spray-painting" },
-    ],
+    submenu: services.map((service) => ({
+      title: service.title,
+      href: "/services/" + service.id,
+    })),
   },
   { title: "Contact", href: "/contact" },
 ]
@@ -89,7 +86,7 @@ const MenuItemComponent: React.FC<{
   )
 }
 
-export default function HamburgerMenu() {
+export function HamburgerMenu() {
   const [open, setOpen] = React.useState(false)
 
   return (

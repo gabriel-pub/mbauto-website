@@ -1,8 +1,9 @@
 export interface Service {
   id: string
   name: string
+  title: string
   description: string
-  details: string
+  details: string[]
   image: string
 }
 

@@ -1,7 +1,7 @@
 import { BrowserRouter, Link } from "react-router-dom"
 import { HamburgerMenu } from "@/components/layout/hamburger"
-import { services } from "./data/services"
-import { ServiceCard } from "./components/layout/card"
+import { services } from "@/data/services"
+import { ServiceCard } from "@/components/layout/card"
 
 function Services() {
   return (

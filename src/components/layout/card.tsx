@@ -14,20 +14,19 @@ interface ServiceCardProps {
 export function ServiceCard({ serviceDetails }: ServiceCardProps) {
   return (
     <Card className="w-full max-w-sm">
+      {/* WARNING: Data driven design => add image links
+      <div className="absolute inset-0 z-30 aspect-video">
+        <img />
+      </div>*/}
       <CardHeader>
-        <CardTitle>{serviceDetails.name}</CardTitle>
-        <CardDescription>{serviceDetails.description}</CardDescription>
+        <CardTitle className="text-center font-bold tracking-tight text-balance">
+          {serviceDetails.name}
+        </CardTitle>
       </CardHeader>
       <CardContent>
-        <form>
-          <div className="flex flex-col gap-6">
-            <div className="grid gap-2">
-              {serviceDetails.details.map((detail) => (
-                <li key={detail}>{detail}</li>
-              ))}
-            </div>
-          </div>
-        </form>
+        <CardDescription className="leading-7 not-first:mt-6">
+          {serviceDetails.description}
+        </CardDescription>
       </CardContent>
     </Card>
   )

@@ -43,7 +43,7 @@ const MenuItemComponent: React.FC<{
         <CollapsibleTrigger asChild>
           <button
             className={cn(
-              "flex w-full items-center justify-between py-2 text-lg font-medium transition-colors hover:text-primary",
+              "hover:text-primary flex w-full items-center justify-between py-2 text-lg font-medium transition-colors",
               depth > 0 && "pl-4"
             )}
           >
@@ -75,7 +75,7 @@ const MenuItemComponent: React.FC<{
     <Link
       to={item.href || "#"}
       className={cn(
-        "block py-2 text-lg font-medium transition-colors hover:text-primary",
+        "hover:text-primary block py-2 text-lg font-medium transition-colors",
         depth > 0 && "pl-4",
         item.href === "/" && "text-primary"
       )}
@@ -97,7 +97,7 @@ export function HamburgerMenu(color: { color: string }) {
           <span className="sr-only">Toggle menu</span>
         </Button>
       </SheetTrigger>
-      <SheetContent side="left" className="w-[240px] sm:w-[300px]">
+      <SheetContent side="left" className="w-60 sm:w-75">
         <nav className="flex flex-col space-y-4">
           {menuItems.map((item) => (
             <MenuItemComponent

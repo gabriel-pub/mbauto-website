@@ -1,4 +1,4 @@
-import { HamburgerMenu } from "@/components/layout/hamburger"
+// import { HamburgerMenu } from "@/components/layout/hamburger"
 import { Home } from "lucide-react"
 import { Link } from "react-router-dom"
 
@@ -10,9 +10,10 @@ export function Navbar() {
           <Home color="white" />
         </h1>
       </Link>
+      {/* NOTE: Disable hamburger menu for now
       <div className="p-4">
         <HamburgerMenu color="white" />
-      </div>
+      </div>*/}
     </nav>
   )
 }

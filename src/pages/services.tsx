@@ -6,7 +6,7 @@ export function Services() {
   const title = "Our Services"
   return (
     <div>
-      <h2 className="mb-12 text-center text-3xl font-bold">{title}</h2>
+      <h2 className="mb-12 text-center text-3xl font-semibold">{title}</h2>
       <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
         {services.map((service) => (
           <Link

@@ -24,7 +24,7 @@ export function ServiceDetailPage({
         ))}
       </ul>
       <div className="grid place-content-center">
-        <Button>
+        <Button variant="outline">
           <Link to="/contact" state={{ serviceName: serviceCardDetails.title }}>
             {buttonText}
           </Link>

@@ -86,14 +86,14 @@ const MenuItemComponent: React.FC<{
   )
 }
 
-export function HamburgerMenu() {
+export function HamburgerMenu(color: { color: string }) {
   const [open, setOpen] = React.useState(false)
 
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger asChild>
         <Button variant="ghost" size="icon" className="md:hidden">
-          <Menu className="h-5 w-5" />
+          <Menu color={color.color} className="h-5 w-5" />
           <span className="sr-only">Toggle menu</span>
         </Button>
       </SheetTrigger>

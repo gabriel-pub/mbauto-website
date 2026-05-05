@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom"
-
 export function Footer() {
   const startYear = 2024
   const currentYear = new Date().getFullYear()
@@ -15,35 +13,6 @@ export function Footer() {
             <p className="text-gray-400">
               Your one-stop shop for vehicle maintenance.
             </p>
-          </div>
-          <div>
-            <h3 className="mb-2 text-lg font-semibold">Quick Links</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link
-                  to="/"
-                  className="transition-colors duration-300 hover:text-blue-300"
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/services"
-                  className="transition-colors duration-300 hover:text-blue-300"
-                >
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/contact"
-                  className="transition-colors duration-300 hover:text-blue-300"
-                >
-                  Contact
-                </Link>
-              </li>
-            </ul>
           </div>
           <div>
             <h3 className="mb-2 text-lg font-semibold">Contact Us</h3>

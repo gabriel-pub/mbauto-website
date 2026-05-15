@@ -2,11 +2,16 @@ import { services } from "@/data/services"
 import { ServiceCard } from "@/components/layout/card"
 import { Link } from "react-router-dom"
 
+import { useTranslation } from "react-i18next"
+
 export function Services() {
-  const title = "Our Services"
+  const { t } = useTranslation()
+  // const services = t(($) => $["services.services"])
   return (
     <div>
-      <h2 className="mb-12 text-center text-3xl font-semibold">{title}</h2>
+      <h2 className="mb-12 text-center text-3xl font-semibold">
+        {t(($) => $["services.title"])}
+      </h2>
       <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
         {services.map((service) => (
           <Link

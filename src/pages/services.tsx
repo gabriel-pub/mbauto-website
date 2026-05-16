@@ -10,7 +10,7 @@ export function Services() {
   return (
     <div>
       <h2 className="mb-12 text-center text-3xl font-semibold">
-        {t(($) => $["services.title"])}
+        {t("services.title")}
       </h2>
       <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
         {services.map((service) => (

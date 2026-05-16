@@ -1,12 +1,12 @@
-import { services } from "@/data/services"
 import { ServiceCard } from "@/components/layout/card"
 import { Link } from "react-router-dom"
+import type { Service } from "@/types"
 
 import { useTranslation } from "react-i18next"
 
 export function Services() {
   const { t } = useTranslation()
-  // const services = t(($) => $["services.services"])
+  const services = t("services.services", { returnObjects: true }) as Service[]
   return (
     <div>
       <h2 className="mb-12 text-center text-3xl font-semibold">

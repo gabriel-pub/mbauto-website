@@ -5,11 +5,15 @@ import Backend from "i18next-http-backend"
 import LanguageDetector from "i18next-browser-languagedetector"
 
 import en from "../public/locales/en/translation.json"
+import zh from "../public/locales/zh/translation.json"
 
 export const defaultNS = "translation"
 export const resources = {
   en: {
     translation: en,
+  },
+  zh: {
+    translation: zh,
   },
 } as const
 

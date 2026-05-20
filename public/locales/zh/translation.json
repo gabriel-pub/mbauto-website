@@ -1,0 +1,101 @@
+{
+  "title": "MB AUTO Service Centre",
+  "cto": {
+    "companyName": "MB AUTO Service Centre",
+    "CTO": "需要帮忙吗？立即致电我们！",
+    "buttonText": "联络我们"
+  },
+  "services": {
+    "title": "我们的服务",
+    "services": [
+      {
+        "id": "oil-change",
+        "name": "更换机油（黑油）",
+        "title": "Oil Change",
+        "description": "定时为您的汽车更换汽油能让您的引擎保持顺畅运作",
+        "details": [
+          "品质保障机油更换",
+          "机油过滤网（油格）更换",
+          "液压检查与添加",
+          "轮胎气压检查"
+        ],
+        "image": "https://via.placeholder.com/600x400.png/28a745/ffffff?text=Oil+Change"
+      },
+      {
+        "id": "brake-service",
+        "name": "刹车护理",
+        "title": "Brake Service",
+        "description": "我们完善的刹车系统护理以及维护提高您安全的保障",
+        "details": [
+          "前后刹车片（皮）更换",
+          "刹车液系统冲洗与更换",
+          "刹车盘/尾鼓检测",
+          "刹车液系统检测"
+        ],
+        "image": "https://via.placeholder.com/600x400.png/28a745/ffffff?text=Brake+Service"
+      },
+      {
+        "id": "vehicle-obd",
+        "name": "汽车电子系统（OBD II）检测",
+        "title": "Vehicle OBD",
+        "description": "我们使用最新的检测仪快速识别与解决电子系统故障",
+        "details": [
+          "检查发动机故障灯诊断",
+          "适用于所有主要品牌的计算机化诊断",
+          "电气系统故障排除",
+          "购车前车辆检查"
+        ],
+        "image": "https://via.placeholder.com/600x400.png/ffc107/000000?text=Diagnostics"
+      },
+      {
+        "id": "air-conditioning",
+        "name": "冷气服务",
+        "title": "Air Conditioning",
+        "description": "我们顶尖的冷气服务与护理让您不受炎热的天气影响",
+        "details": [
+          "冷气系统检测",
+          "冷液系统泄漏检测与维修",
+          "冷气液压机与冷凝器维修和更换",
+          "舱内空气过滤器更换"
+        ],
+        "image": "https://via.placeholder.com/600x400.png/17a2b8/ffffff?text=Air-Con"
+      },
+      {
+        "id": "vehicle-up-keeping",
+        "name": "全面汽车护理",
+        "title": "Vehicle Up Keeping",
+        "description": "即将启程长途？我们完善的汽车维护让您与家人无忧",
+        "details": [
+          "前后轮胎调换与平衡",
+          "车轮定位",
+          "电池电力测试与更换",
+          "雨刮片更换"
+        ],
+        "image": "https://via.placeholder.com/600x400.png/6f42c1/ffffff?text=Up-Keeping"
+      },
+      {
+        "id": "autobody-repair",
+        "name": "喷漆与车身修补",
+        "title": "Spray painting",
+        "description": "我们提供专业的汽车喷漆服务，修补车身的大小坑洼",
+        "details": [
+          "碰撞修复与凹痕去除",
+          "全车喷漆",
+          "划痕与缺损修复",
+          "漆面保护和抛光"
+        ],
+        "image": "https://via.placeholder.com/600x400.png/dc3545/ffffff?text=Autobody"
+      }
+    ]
+  },
+  "service-details": {
+    "errorTitle": "无此服务",
+    "errorDescription": "很抱歉，我们无法找到您想要的服务",
+    "errorLink": "回到主页"
+  },
+  "page": {
+    "service-detail-page": {
+      "buttonText": "预定服务"
+    }
+  }
+}

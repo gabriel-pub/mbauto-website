@@ -1,6 +1,9 @@
 import { Button } from "@/components/ui/button"
+import { Phone } from "lucide-react"
 import { Link } from "react-router-dom"
 import type { Service } from "@/types"
+
+import { useTranslation } from "react-i18next"
 
 interface ServiceDetailPageProps {
   serviceCardDetails: Service
@@ -9,7 +12,7 @@ interface ServiceDetailPageProps {
 export function ServiceDetailPage({
   serviceCardDetails,
 }: ServiceDetailPageProps) {
-  const buttonText = "Book This Service"
+  const { t } = useTranslation()
   return (
     <div>
       <h1 className="scroll-m-20 text-center text-2xl font-extrabold tracking-tight text-balance">
@@ -25,8 +28,13 @@ export function ServiceDetailPage({
       </ul>
       <div className="grid place-content-center">
         <Button variant="outline">
-          <Link to="/contact" state={{ serviceName: serviceCardDetails.title }}>
-            {buttonText}
+          <Link
+            to="tel:+60127196133"
+            className="flex items-center gap-2"
+            // state={{ serviceName: serviceCardDetails.title }}
+          >
+            <Phone />
+            {t("page.service-detail-page.buttonText")}
           </Link>
         </Button>
       </div>

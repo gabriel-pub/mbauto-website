@@ -26,7 +26,7 @@ export function ServiceDetailPage({
           <li key={detail}>{detail}</li>
         ))}
       </ul>
-      <div className="grid place-content-center">
+      <div className="flex place-content-center items-center gap-2">
         <Button variant="outline">
           <Link
             to="tel:+60127196133"
@@ -34,7 +34,16 @@ export function ServiceDetailPage({
             // state={{ serviceName: serviceCardDetails.title }}
           >
             <Phone />
-            {t("page.service-detail-page.buttonText")}
+            {t("page.service-detail-page.buttonBookService")}
+          </Link>
+        </Button>
+        <Button variant="outline">
+          <Link
+            to="/"
+            className="flex items-center gap-2"
+            // state={{ serviceName: serviceCardDetails.title }}
+          >
+            {t("page.service-detail-page.buttonBack")}
           </Link>
         </Button>
       </div>

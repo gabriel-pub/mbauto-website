@@ -95,7 +95,8 @@
   },
   "page": {
     "service-detail-page": {
-      "buttonText": "预定服务"
+      "buttonBookService": "预定服务",
+      "buttonBack": "返回"
     }
   }
 }

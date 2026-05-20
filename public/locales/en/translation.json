@@ -95,7 +95,8 @@
   },
   "page": {
     "service-detail-page": {
-      "buttonText": "Book This Service"
+      "buttonBookService": "Book This Service",
+      "buttonBack": "Back Home"
     }
   }
 }

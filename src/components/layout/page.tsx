@@ -42,6 +42,15 @@ export function ServiceDetailPage({
             to="/"
             className="flex items-center gap-2"
             // state={{ serviceName: serviceCardDetails.title }}
+            //
+            // Usage: The useLocation() hook can extract state.serviceName and
+            // get the value of serviceCardDetails.title
+            //
+            // Example:
+            // export default function SomeFunc() {
+            //   const location = useLocation()
+            //   return <div>{location.state.serviceName}</div>
+            // }
           >
             {t("page.service-detail-page.buttonBack")}
           </Link>

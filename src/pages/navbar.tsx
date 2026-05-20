@@ -29,7 +29,7 @@ export function Navbar() {
       <div className="p-4">
         <HamburgerMenu color="white" />
       </div>*/}
-      <Button className="text-white" onClick={handleToggle}>
+      <Button className="mt-2 mr-2 text-white" onClick={handleToggle}>
         {buttonLabel}
       </Button>
     </nav>

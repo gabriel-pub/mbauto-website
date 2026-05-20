@@ -8,7 +8,7 @@ export function CTO() {
   const { t } = useTranslation()
   return (
     <div className="py-12">
-      <h1 className="mb-12 text-center text-3xl font-extrabold">
+      <h1 className="mb-12 text-center text-3xl font-extrabold uppercase">
         {t("cto.companyName")}
       </h1>
       <blockquote className="mt-6 border-l-2 pl-4 text-center text-xl italic">

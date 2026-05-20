@@ -15,13 +15,13 @@ export function ServiceDetailPage({
   const { t } = useTranslation()
   return (
     <div>
-      <h1 className="scroll-m-20 text-center text-2xl font-extrabold tracking-tight text-balance">
+      <h1 className="scroll-m-20 text-center text-3xl font-extrabold tracking-tight text-balance">
         {serviceCardDetails.name}
       </h1>
-      <blockquote className="mt-6 border-l-2 pl-4 italic">
+      <blockquote className="mt-6 border-l-2 pl-4 text-xl italic">
         {serviceCardDetails.description}
       </blockquote>
-      <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
+      <ul className="my-6 ml-6 list-disc text-xl [&>li]:mt-2">
         {serviceCardDetails.details.map((detail) => (
           <li key={detail}>{detail}</li>
         ))}

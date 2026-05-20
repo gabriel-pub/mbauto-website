@@ -19,12 +19,12 @@ export function ServiceCard({ serviceDetails }: ServiceCardProps) {
         <img />
       </div>*/}
       <CardHeader>
-        <CardTitle className="text-center font-bold tracking-tight text-balance">
+        <CardTitle className="text-center text-xl font-bold tracking-tight text-balance">
           {serviceDetails.name}
         </CardTitle>
       </CardHeader>
       <CardContent>
-        <CardDescription className="leading-7 not-first:mt-6">
+        <CardDescription className="text-lg leading-7 not-first:mt-6">
           {serviceDetails.description}
         </CardDescription>
       </CardContent>

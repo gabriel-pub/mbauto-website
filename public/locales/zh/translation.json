@@ -88,13 +88,13 @@
       }
     ]
   },
-  "service-details": {
+  "serviceDetails": {
     "errorTitle": "无此服务",
     "errorDescription": "很抱歉，我们无法找到您想要的服务",
     "errorLink": "回到主页"
   },
   "page": {
-    "service-detail-page": {
+    "serviceDetailPage": {
       "buttonBookService": "预定服务",
       "buttonBack": "返回"
     }

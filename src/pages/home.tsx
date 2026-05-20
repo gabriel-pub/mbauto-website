@@ -1,5 +1,5 @@
-import { CTO } from "@/pages/cto"
-import { Services } from "@/pages/services"
+import { CTO } from "@/components/layout/cto"
+import { Services } from "@/components/layout/services"
 
 export function Home() {
   return (

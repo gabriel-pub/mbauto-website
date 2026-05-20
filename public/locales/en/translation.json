@@ -88,13 +88,13 @@
       }
     ]
   },
-  "service-details": {
+  "serviceDetails": {
     "errorTitle": "Service Not Found",
     "errorDescription": "Sorry, we couldn't find the service you were looking for.",
     "errorLink": "Back to All Services"
   },
   "page": {
-    "service-detail-page": {
+    "serviceDetailPage": {
       "buttonBookService": "Book This Service",
       "buttonBack": "Back Home"
     }

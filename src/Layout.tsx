@@ -1,6 +1,6 @@
-import { Navbar } from "@/pages/navbar"
+import { Navbar } from "@/components/layout/navbar"
 import { Outlet } from "react-router-dom"
-import { Footer } from "@/pages/footer"
+import { Footer } from "@/components/layout/footer"
 
 export function Layout() {
   return (

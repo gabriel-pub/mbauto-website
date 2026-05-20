@@ -34,7 +34,7 @@ export function ServiceDetailPage({
             // state={{ serviceName: serviceCardDetails.title }}
           >
             <Phone />
-            {t("page.service-detail-page.buttonBookService")}
+            {t("page.serviceDetailPage.buttonBookService")}
           </Link>
         </Button>
         <Button variant="outline">
@@ -52,7 +52,7 @@ export function ServiceDetailPage({
             //   return <div>{location.state.serviceName}</div>
             // }
           >
-            {t("page.service-detail-page.buttonBack")}
+            {t("page.serviceDetailPage.buttonBack")}
           </Link>
         </Button>
       </div>

@@ -15,13 +15,13 @@ export function ServiceDetail() {
       // style this later
       <div className="py-12 text-center">
         <h1 className="mb-4 text-3xl font-bold">
-          {t("service-details.errorTitle")}
+          {t("serviceDetails.errorTitle")}
         </h1>
         <p className="mb-8 text-gray-600">
-          {t("service-details.errorDescription")}
+          {t("serviceDetails.errorDescription")}
         </p>
         <Link to="/" className="text-blue-600 hover:underline">
-          {t("service-details.errorLink")}
+          {t("serviceDetails.errorLink")}
         </Link>
       </div>
     )

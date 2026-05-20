@@ -92,5 +92,10 @@
     "errorTitle": "Service Not Found",
     "errorDescription": "Sorry, we couldn't find the service you were looking for.",
     "errorLink": "Back to All Services"
+  },
+  "page": {
+    "service-detail-page": {
+      "buttonText": "Book This Service"
+    }
   }
 }

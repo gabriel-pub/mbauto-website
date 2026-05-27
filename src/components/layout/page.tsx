@@ -4,6 +4,7 @@ import { Link } from "react-router-dom"
 import type { Prices, Service } from "@/types"
 
 import { useTranslation } from "react-i18next"
+import { FeaturedCard } from "@/components/layout/card"
 
 interface ServiceDetailPageProps {
   serviceCardDetails: Service
@@ -46,26 +47,12 @@ function FeaturedProduct({ prices }: PricesProps) {
   const { t } = useTranslation()
   return (
     <div className="mt-6 mb-6">
-      <h2 className="scroll-m-20 text-center text-2xl font-extrabold tracking-tight text-balance">
+      <h2 className="mb-6 scroll-m-20 text-center text-2xl font-extrabold tracking-tight text-balance">
         {t("page.serviceDetailPage.featuredSection")}
       </h2>
       {featuredProduct.map((productIndex) => (
         <li key={productIndex} className="list-none">
-          {/* TODO: Add image links for the products
-		  <img src=""/>*/}
-          <h3 className="mt-6 text-center text-xl font-bold text-balance">
-            {prices[productIndex].title}
-          </h3>
-          <p className="mt-3 text-center text-xl text-balance">
-            {t("page.serviceDetailPage.starting") +
-              " : " +
-              t("page.serviceDetailPage.currency") +
-              " " +
-              prices[productIndex].startingPrice}
-          </p>
-          <p className="mt-3 mb-3 pl-4 text-center text-sm italic">
-            {prices[productIndex].description}
-          </p>
+          <FeaturedCard prices={prices[productIndex]} />
         </li>
       ))}
     </div>

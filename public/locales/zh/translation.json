@@ -19,6 +19,14 @@
           "液压检查与添加",
           "轮胎气压检查"
         ],
+        "prices": [
+          {
+            "title": "Castrol 机油 5W40",
+            "description": "*机油过滤网与人工除外",
+            "unitPrice": 174.0,
+            "startingPrice": 170.0
+          }
+        ],
         "image": "https://via.placeholder.com/600x400.png/28a745/ffffff?text=Oil+Change"
       },
       {
@@ -96,7 +104,10 @@
   "page": {
     "serviceDetailPage": {
       "buttonBookService": "预定服务",
-      "buttonBack": "返回"
+      "buttonBack": "返回",
+      "featuredSection": "优惠",
+      "starting": "从",
+      "currency": "RM"
     }
   }
 }

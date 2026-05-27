@@ -19,6 +19,14 @@
           "Fluid level check and top-up",
           "Tire pressure check"
         ],
+        "prices": [
+          {
+            "title": "Castrol Engine Oil 5W40",
+            "description": "*Excluding Oil Filter and Labour Charge",
+            "unitPrice": 174.0,
+            "startingPrice": 170.0
+          }
+        ],
         "image": "https://via.placeholder.com/600x400.png/28a745/ffffff?text=Oil+Change"
       },
       {
@@ -96,7 +104,10 @@
   "page": {
     "serviceDetailPage": {
       "buttonBookService": "Book This Service",
-      "buttonBack": "Back Home"
+      "buttonBack": "Back Home",
+      "featuredSection": "Featured",
+      "starting": "Starting from",
+      "currency": "RM"
     }
   }
 }

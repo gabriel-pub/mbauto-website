@@ -1,9 +1,17 @@
+export interface Prices {
+  title: string
+  description: string
+  unitPrice: number
+  startingPrice?: number
+}
+
 export interface Service {
   id: string
   name: string
   title: string
   description: string
   details: string[]
+  prices?: Prices[]
   image: string
 }
 

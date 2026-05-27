@@ -50,7 +50,7 @@ function FeaturedProduct({ prices }: PricesProps) {
         {t("page.serviceDetailPage.featuredSection")}
       </h2>
       {featuredProduct.map((productIndex) => (
-        <>
+        <li key={productIndex} className="list-none">
           {/* TODO: Add image links for the products
 		  <img src=""/>*/}
           <h3 className="mt-6 text-center text-xl font-bold text-balance">
@@ -66,7 +66,7 @@ function FeaturedProduct({ prices }: PricesProps) {
           <p className="mt-3 mb-3 pl-4 text-center text-sm italic">
             {prices[productIndex].description}
           </p>
-        </>
+        </li>
       ))}
     </div>
   )

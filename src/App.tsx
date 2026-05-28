@@ -5,6 +5,7 @@ import { ServiceDetail } from "@/pages/service-details"
 
 import { useEffect } from "react"
 import { useLocation } from "react-router-dom"
+import { Analytics } from "@vercel/analytics/react"
 
 // Reference: https://stackoverflow.com/a/76451316/14841168
 function ScrollToTop() {
@@ -26,6 +27,7 @@ export function App() {
           <Route path="/services/:serviceId" element={<ServiceDetail />} />
         </Route>
       </Routes>
+      <Analytics />
     </>
   )
 }

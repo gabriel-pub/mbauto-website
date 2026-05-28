@@ -37,7 +37,7 @@ function FeaturedProduct({ prices }: PricesProps) {
     return <></>
   }
   const productCount = prices.length
-  let featuredProduct: number[] = []
+  const featuredProduct: number[] = []
   for (let index = 0; index < productCount; index++) {
     // Only products with a startingPrice field are considered "featured"
     if (prices[index].startingPrice) {
